@@ -1,0 +1,11 @@
+displayName: Auth Delay
+summary: Adds a random delay to failed authorization request responses
+type: middleware
+import: github.com/colearendt/traefik-plugin-auth-delay
+compatibility: TODO
+testData:
+  auth-delay:
+    - min-code: 401
+      max-code: 401
+      min-delay: 2s
+      max-delay: 5s
